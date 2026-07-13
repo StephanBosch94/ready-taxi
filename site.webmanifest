@@ -1,0 +1,22 @@
+{
+  "name": "Ready Taxi Kragujevac",
+  "short_name": "Ready Taxi",
+  "description": "Taxi usluga u Kragujevcu — dostupni 24/7. Pozovite 034 377 377 ili 066 377 377.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "lang": "sr",
+  "icons": [
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

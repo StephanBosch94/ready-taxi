@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stephanbosch94.github.io/ready-taxi/sitemap.xml
