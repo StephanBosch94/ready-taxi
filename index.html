@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ready Taxi Kragujevac | Pozovite 034 377 377</title>
-  <meta name="description" content="Ready Taxi Kragujevac — brz, siguran i pouzdan prevoz po gradu 24/7. Pozovite 034 377 377 ili 066 377 377.">
+  <meta name="description" content="Ready Taxi Kragujevac — brz, siguran i pouzdan prevoz po gradu 24/7. Naručite pozivom 034 377 377 ili 066 377 377.">
   <meta name="keywords" content="taxi kragujevac, ready taxi, taxi kragujevac telefon, prevoz kragujevac, taxi 24/7">
   <meta name="author" content="Ready Taxi">
   <meta name="robots" content="index, follow">
@@ -42,7 +42,7 @@
     "@context": "https://schema.org",
     "@type": "TaxiService",
     "name": "Ready Taxi",
-    "description": "Brz, siguran i pouzdan taxi prevoz u Kragujevcu, dostupni 24/7.",
+    "description": "Brz, siguran i pouzdan taxi prevoz u Kragujevcu, dostupni 24/7. Naručite pozivom ili Viberom.",
     "url": "https://readytaxi.rs/",
     "logo": "https://readytaxi.rs/ready-logo.png",
     "image": "https://readytaxi.rs/ready-taxi-car.png",
@@ -68,11 +68,23 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#pocetna">Preskoči na sadržaj</a>
+
   <header class="navbar">
     <div class="navbar__inner">
-      <a href="/" class="navbar__logo">
+      <a href="#pocetna" class="navbar__logo">
         <img src="ready-logo.png" alt="Ready Taxi Kragujevac" class="navbar__logo-img" width="120" height="48">
       </a>
+
+      <nav class="navbar__nav" id="site-nav" aria-label="Glavna navigacija">
+        <a href="#pocetna">Početna</a>
+        <a href="#usluge">Usluge</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#cenovnik">Cenovnik</a>
+        <a href="#faq">Pitanja</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
       <div class="navbar__phones">
         <a href="tel:+38134377377" class="navbar__phone">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -87,65 +99,412 @@
           <span>066 377 377</span>
         </a>
       </div>
+
+      <button class="navbar__toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Otvori meni">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <main class="hero">
-    <div class="hero__intro">
-      <div class="hero__badge">
-        <span class="hero__badge-dot"></span>
-        Kragujevac · Dostupni 24/7
+  <main>
+    <section class="hero" id="pocetna">
+      <div class="hero__intro">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Kragujevac · Dostupni 24/7
+        </div>
+
+        <h1 class="hero__title">Ready <span class="hero__title-accent">Taxi.</span></h1>
+
+        <p class="hero__subtitle">
+          Brz, siguran i pouzdan prevoz po celom Kragujevcu.
+          Pozovite nas ili pišite Viber botu — vozilo stiže za nekoliko minuta.
+        </p>
       </div>
 
-      <h1 class="hero__title">Ready <span class="hero__title-accent">Taxi.</span></h1>
+      <div class="hero__car">
+        <img
+          src="ready-taxi-car.png"
+          alt="Ready Taxi automobil u Kragujevcu"
+          class="hero__car-image"
+          width="1200"
+          height="600"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </div>
 
-      <p class="hero__subtitle">
-        Brz, siguran i pouzdan prevoz po celom Kragujevcu.
-        Pozovite nas i vozilo stiže za nekoliko minuta.
-      </p>
-    </div>
-
-    <div class="hero__car">
-      <img
-        src="ready-taxi-car.png"
-        alt="Ready Taxi automobil u Kragujevcu"
-        class="hero__car-image"
-        width="1200"
-        height="600"
-        loading="eager"
-        fetchpriority="high"
-      >
-    </div>
-
-    <div class="hero__cta">
-      <a href="tel:+38134377377" class="cta">
-        <span class="cta__icon-wrap" aria-hidden="true">
-          <span class="cta__pulse"></span>
-          <svg class="cta__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-        </span>
-        <span class="cta__body">
-          <span class="cta__eyebrow">Pozovite odmah — besplatan poziv</span>
-          <span class="cta__numbers">
-            <span class="cta__number">034 377 377</span>
-            <span class="cta__dot" aria-hidden="true">·</span>
-            <span class="cta__number">066 377 377</span>
+      <div class="hero__cta">
+        <a href="tel:+38134377377" class="cta">
+          <span class="cta__icon-wrap" aria-hidden="true">
+            <span class="cta__pulse"></span>
+            <svg class="cta__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
           </span>
-        </span>
-        <span class="cta__arrow" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-          </svg>
-        </span>
-      </a>
+          <span class="cta__body">
+            <span class="cta__eyebrow">Pozovite odmah — besplatan poziv</span>
+            <span class="cta__numbers">
+              <span class="cta__number">034 377 377</span>
+              <span class="cta__dot" aria-hidden="true">·</span>
+              <span class="cta__number">066 377 377</span>
+            </span>
+          </span>
+          <span class="cta__arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
 
-      <ul class="hero__trust">
-        <li>24/7 dostupni</li>
-        <li>Brza dolaznost</li>
-        <li>Siguran prevoz</li>
-      </ul>
+        <ul class="hero__trust">
+          <li>24/7 dostupni</li>
+          <li>Brza dolaznost</li>
+          <li><a href="viber://chat?number=%2B38166377377">Viber bot</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Dostupni 24/7</span>
+        <span>Gradska vožnja</span>
+        <span>Međugradski prevoz</span>
+        <span>Aerodromski transferi</span>
+        <span>Poziv ili Viber</span>
+        <span>Viber naručivanje</span>
+        <span>Dispečerski centar</span>
+        <span>Klimatizovana vozila</span>
+        <span>Dostupni 24/7</span>
+        <span>Gradska vožnja</span>
+        <span>Međugradski prevoz</span>
+        <span>Aerodromski transferi</span>
+        <span>Poziv ili Viber</span>
+        <span>Viber naručivanje</span>
+        <span>Dispečerski centar</span>
+        <span>Klimatizovana vozila</span>
+      </div>
     </div>
+
+    <section class="stats">
+      <div class="wrap stats__grid">
+        <article class="stats__item">
+          <p class="stats__value">24/7</p>
+          <p class="stats__label">uvek dostupni</p>
+        </article>
+        <article class="stats__item">
+          <p class="stats__value">Brzo</p>
+          <p class="stats__label">vozilo u minutama</p>
+        </article>
+        <article class="stats__item">
+          <p class="stats__value">Viber</p>
+          <p class="stats__label">naručite porukom</p>
+        </article>
+        <article class="stats__item">
+          <p class="stats__value">2 broja</p>
+          <p class="stats__label">034 i 066 — birajte slobodno</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="usluge">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Naše usluge</p>
+          <h2>Sve što vam treba.<br>Na jedan poziv.</h2>
+          <p class="section-head__lead">
+            Gradska vožnja, transferi i međugradski prevoz — naručite pozivom ili Viberom.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 17h14v-5l-2.2-5.2A2 2 0 0 0 14.95 5H9.05a2 2 0 0 0-1.85 1.8L5 12z"/>
+                <circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/>
+              </svg>
+            </span>
+            <h3>Gradska vožnja</h3>
+            <p>Po celom Kragujevcu, danju i noću. Stižemo brzo — na posao, kući ili u grad.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+              </svg>
+            </span>
+            <h3>Međugradske vožnje</h3>
+            <p>Beograd, Niš, Novi Sad i drugi gradovi. Cena se dogovara unapred sa dispečerom.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 16l8-3 3-8 2 4 5 2-8 3-2 8-2-4z"/>
+              </svg>
+            </span>
+            <h3>Aerodromski transferi</h3>
+            <p>Transfer do aerodroma Nikola Tesla, Morava i ostalih destinacija — na vreme, bez stresa.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </span>
+            <h3>Pozovite odmah</h3>
+            <p>034 377 377 ili 066 377 377. Birate broj — dispečer javlja i šalje najbliže vozilo.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </span>
+            <h3>Viber naručivanje</h3>
+            <p>Pošaljite poruku na 066 377 377. Napišite adresu — dispečer šalje najbliže vozilo.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-3a9 9 0 0 1 18 0v3"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+              </svg>
+            </span>
+            <h3>Dispečer 24/7</h3>
+            <p>Centar je otvoren svakog dana, 24 sata. Uvek neko javlja — noć, vikend ili praznik.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3M6.5 7.5l-2-2M17.5 7.5l2-2"/><path d="M8 14a4 4 0 1 1 8 0"/><path d="M4 20h16"/>
+              </svg>
+            </span>
+            <h3>Klimatizovana vozila</h3>
+            <p>Udobna vožnja zimi i leti. Čista, uredna vozila spremna kad god nas pozovete.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/>
+              </svg>
+            </span>
+            <h3>GPS u vozilima</h3>
+            <p>Vozila koriste savremenu navigaciju da stignu brzo i bezbedno, najkraćom rutom.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="o-nama">
+      <div class="wrap about__grid">
+        <div class="about__copy">
+          <p class="eyebrow">O nama</p>
+          <h2>Uvek spremni.<br>Uvek tu za vas.</h2>
+          <p>
+            Ready Taxi je pouzdana taksi služba Kragujevca. Naručite vozilo kad god krenete —
+            na posao, na stanicu, na aerodrom ili kući posle noći u gradu.
+          </p>
+          <p>
+            Dispečerski centar radi 24 sata, 7 dana u nedelji. Pozovite
+            <a href="tel:+38134377377">034 377 377</a> ili
+            <a href="tel:+38166377377">066 377 377</a>.
+            Pišite i na Viber — birate kako vama odgovara.
+          </p>
+          <ul class="about__list">
+            <li>Brza dolaznost po celom gradu</li>
+            <li>Dispečer dostupan 24 časa, svakog dana</li>
+            <li>Naručivanje pozivom ili Viberom</li>
+            <li>Međugradske vožnje i aerodromski transferi</li>
+            <li>Klimatizovana vozila, uredna i spremna</li>
+          </ul>
+          <a href="tel:+38134377377" class="btn btn--solid">Pozovite 034 377 377</a>
+        </div>
+        <div class="about__visual">
+          <img
+            src="ready-taxi-car.png"
+            alt="Ready Taxi vozilo, belo-narandžasti Toyota C-HR"
+            width="800"
+            height="400"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Rezervacija · 24/7</p>
+          <h2>Rezervišite vožnju i krenite bez brige.</h2>
+          <p>Pozovite dispečera ili pošaljite Viber poruku — vozilo je na putu.</p>
+        </div>
+        <div class="band__actions">
+          <a href="tel:+38134377377" class="btn btn--light">Pozovi odmah</a>
+          <a href="viber://chat?number=%2B38166377377" class="btn btn--ghost">Piši na Viber</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="cenovnik">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Cenovnik</p>
+          <h2>Naše tarife</h2>
+          <p class="section-head__lead">
+            Gradske vožnje po važećoj tarifi grada Kragujevca.
+            Međugradske i inostrane vožnje dogovaramo unapred.
+          </p>
+        </header>
+
+        <div class="pricing__grid">
+          <article class="price-card">
+            <p class="price-card__tag">Tarifa 1</p>
+            <p class="price-card__rate">85 <span>din/km</span></p>
+            <h3>Gradska vožnja — dan</h3>
+            <ul>
+              <li>Start: 180 RSD</li>
+              <li>Ponedeljak–subota, 06:00–22:00</li>
+              <li>Na teritoriji grada Kragujevca</li>
+            </ul>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <p class="price-card__tag">Tarifa 2</p>
+            <p class="price-card__rate">90 <span>din/km</span></p>
+            <h3>Noć, nedelja i praznici</h3>
+            <ul>
+              <li>Start: 180 RSD</li>
+              <li>22:00–06:00, nedeljom i praznicima</li>
+              <li>Na teritoriji grada Kragujevca</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <p class="price-card__tag">Tarifa 3</p>
+            <p class="price-card__rate price-card__rate--text">Dogovor</p>
+            <h3>Van grada i inostranstvo</h3>
+            <ul>
+              <li>Cena se dogovara unapred</li>
+              <li>Međugradski i aerodromski transferi</li>
+              <li>Pozovite 034 377 377</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="pricing__note">
+          Cene odgovaraju važećoj jediničnoj tarifi grada Kragujevca.
+          Tačan iznos gradske vožnje određuje taksimetar.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq__layout">
+        <header class="section-head section-head--left">
+          <p class="eyebrow">Česta pitanja</p>
+          <h2>Odgovori pre nego što krenete.</h2>
+          <p class="section-head__lead">
+            Najčešća pitanja putnika u Kragujevcu. Ako nešto nije ovde — pozovite dispečera.
+          </p>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item" open>
+            <summary>Kako da naručim Ready Taxi?</summary>
+            <p>Pozovite 034 377 377 ili 066 377 377, ili pošaljite poruku na Viber (066 377 377). Vozilo kreće prema vama odmah.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Da li radite 24 sata, svakog dana?</summary>
+            <p>Da. Dispečerski centar i vozači su dostupni 24 časa, 7 dana u nedelji — uključujući noć, vikend i praznike.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Koliko košta vožnja po gradu?</summary>
+            <p>Po važećoj tarifi grada Kragujevca: start 180 RSD, 85 din/km danju radnim danima i subotom, 90 din/km noću, nedeljom i praznicima. Tačan iznos pokazuje taksimetar.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Da li vozite van Kragujevca i u inostranstvo?</summary>
+            <p>Da. Međugradske vožnje i transferi se dogovaraju unapred — pozivom ili Viberom. Cenu znate pre polaska.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Mogu li da naručim preko Vibera?</summary>
+            <p>Da. Pošaljite poruku na 066 377 377 — napišite adresu i broj putnika. Dispečer šalje najbliže vozilo.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Kako mogu da prijavim problem?</summary>
+            <p>Pozovite dispečera na 034 377 377 ili 066 377 377. Tu smo 24/7 — svaka prijava i predlog nam je važan.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="wrap contact__inner">
+        <p class="eyebrow eyebrow--light">Kontakt</p>
+        <h2>Pozovite. Pišite. Naručite.</h2>
+        <p class="contact__lead">Ready Taxi Kragujevac — dispečer javlja odmah, vozilo je u pokretu.</p>
+
+        <div class="contact__cards">
+          <a class="contact-card" href="tel:+38134377377">
+            <span>Fiksni</span>
+            <strong>034 377 377</strong>
+          </a>
+          <a class="contact-card" href="tel:+38166377377">
+            <span>Mobilni</span>
+            <strong>066 377 377</strong>
+          </a>
+          <a class="contact-card contact-card--viber" href="viber://chat?number=%2B38166377377">
+            <span>Viber</span>
+            <strong>066 377 377</strong>
+          </a>
+        </div>
+
+        <p class="contact__place">Kragujevac, Srbija · Dostupni 24/7</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <img src="ready-logo.png" alt="Ready Taxi" width="72" height="72">
+        <p>Ready Taxi Kragujevac — brz, siguran i pouzdan prevoz. Pozovite ili pišite na Viber.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Podnožje">
+        <p>Navigacija</p>
+        <a href="#pocetna">Početna</a>
+        <a href="#usluge">Usluge</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#cenovnik">Cenovnik</a>
+        <a href="#faq">Pitanja</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="footer__contact">
+        <p>Kontakt</p>
+        <a href="tel:+38134377377">034 377 377</a>
+        <a href="tel:+38166377377">066 377 377</a>
+        <a href="viber://chat?number=%2B38166377377">Viber 066 377 377</a>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>© 2026 Ready Taxi Kragujevac. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <a href="tel:+38134377377" class="fab" aria-label="Pozovite 034 377 377">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
