@@ -1042,15 +1042,18 @@ a {
 }
 
 .footer__bar {
+  border-top: 1px solid var(--line);
+  padding: 1.1rem 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer__bar-inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 0.35rem 1.25rem;
-  border-top: 1px solid var(--line);
-  padding: 1.1rem 1.5rem;
-  color: var(--text-muted);
-  font-size: 0.85rem;
 }
 
 .footer__bar p:last-child {
@@ -1289,6 +1292,14 @@ a {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
+  }
+
+  .footer__bar-inner {
+    justify-content: flex-start;
+  }
+
+  .footer__bar p:last-child {
+    margin-left: 0;
   }
 
   .fab {
