@@ -34,3 +34,18 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 })();
+
+(() => {
+  const appLink = "viber://pa?chatURI=ready-taxi-kg";
+
+  document.querySelectorAll("[data-viber]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const frame = document.createElement("iframe");
+      frame.hidden = true;
+      frame.setAttribute("aria-hidden", "true");
+      frame.src = appLink;
+      document.body.appendChild(frame);
+      window.setTimeout(() => frame.remove(), 2000);
+    });
+  });
+})();
