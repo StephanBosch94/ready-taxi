@@ -195,9 +195,19 @@ a {
 .navbar__logo {
   display: flex;
   align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
   flex-shrink: 0;
+  color: var(--text-primary);
   transition: opacity 0.2s ease;
+}
+
+.navbar__name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .navbar__logo:hover {
@@ -827,7 +837,7 @@ a {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: 62% 46%;
+  object-position: center 68%;
 }
 
 .band {
@@ -990,7 +1000,7 @@ a {
 }
 
 .contact-card--viber .contact-card__icon {
-  color: #ddd6fe;
+  color: #fff;
 }
 
 .contact__place {
@@ -1335,6 +1345,10 @@ a {
   .navbar__logo img,
   .navbar__logo-img {
     height: 2.5rem;
+  }
+
+  .navbar__name {
+    font-size: 1.05rem;
   }
 
   .cta__arrow {
