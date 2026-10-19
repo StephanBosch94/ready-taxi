@@ -187,9 +187,9 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  max-width: var(--wrap);
+  width: min(100% - 2.5rem, var(--wrap));
   margin: 0 auto;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 0;
 }
 
 .navbar__logo {
@@ -1228,7 +1228,8 @@ a {
     --navbar-height: 4rem;
   }
 
-  .wrap {
+  .wrap,
+  .navbar__inner {
     width: min(100% - 2rem, var(--wrap));
   }
 
