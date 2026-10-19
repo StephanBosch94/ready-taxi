@@ -386,6 +386,10 @@ a {
   color: var(--ready-orange);
 }
 
+.hero__badge-dark {
+  color: var(--text-primary);
+}
+
 .hero__badge-dot {
   width: 0.5rem;
   height: 0.5rem;
@@ -958,16 +962,17 @@ a {
 .contact-card {
   display: block;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: #fff;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 1.1rem;
   padding: 1.25rem 1rem;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-card:hover {
   transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .contact-card span {
@@ -975,7 +980,7 @@ a {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--text-muted);
   margin-bottom: 0.3rem;
 }
 
@@ -992,7 +997,7 @@ a {
 
 .contact-card__icon {
   flex-shrink: 0;
-  color: #fff;
+  color: var(--ready-orange);
 }
 
 .contact-card--viber {
